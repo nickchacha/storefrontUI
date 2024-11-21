@@ -22,7 +22,7 @@ useHead(websiteHomepageHead(websiteHomepage.value, ""));
   <section class="pb-16">
     <NuxtLazyHydrate when-visible>
       <LazyProductSlider
-        heading="Inspired by your picks"
+        heading="Inspired ________by your picks"
         key="inspired-by-picks"
         key-for-composable="inspired-by-picks"
       />
