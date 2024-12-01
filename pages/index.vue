@@ -15,19 +15,10 @@ useHead(websiteHomepageHead(websiteHomepage.value, ""));
 
 <template>
   <MainBanner />
-  <CategoryCard :categories="categories" />
   <NuxtLazyHydrate when-visible>
     <LazyDisplay />
   </NuxtLazyHydrate>
-  <section class="pb-16">
-    <NuxtLazyHydrate when-visible>
-      <LazyProductSlider
-        heading="Inspired ________by your picks"
-        key="inspired-by-picks"
-        key-for-composable="inspired-by-picks"
-      />
-    </NuxtLazyHydrate>
-  </section>
+  
   <section class="pb-16" v-if="list?.length > 0">
     <ClientOnly>
       <LazyProductSlider
@@ -37,5 +28,15 @@ useHead(websiteHomepageHead(websiteHomepage.value, ""));
         key-for-composable="recent-views"
       />
     </ClientOnly>
+  </section>
+  <CategoryCard :categories="categories" />
+  <section class="pb-16">
+    <NuxtLazyHydrate when-visible>
+      <LazyProductSlider
+        heading="Inspired ________by your picks"
+        key="inspired-by-picks"
+        key-for-composable="inspired-by-picks"
+      />
+    </NuxtLazyHydrate>
   </section>
 </template>
