@@ -14,11 +14,7 @@ useHead(websiteHomepageHead(websiteHomepage.value, ""));
 </script>
 
 <template>
-  <MainBanner />
-  <NuxtLazyHydrate when-visible>
-    <LazyDisplay />
-  </NuxtLazyHydrate>
-  
+
   <section class="pb-16" v-if="list?.length > 0">
     <ClientOnly>
       <LazyProductSlider
@@ -39,4 +35,9 @@ useHead(websiteHomepageHead(websiteHomepage.value, ""));
       />
     </NuxtLazyHydrate>
   </section>
+  <MainBanner />
+  <NuxtLazyHydrate when-visible>
+    <LazyDisplay />
+  </NuxtLazyHydrate>
+  
 </template>
