@@ -197,7 +197,10 @@ await loadProductVariant(params.value);
               class="mb-4 font-normal typography-text-sm"
               data-testid="product-description"
             >
-              {{ productVariant?.description }}
+              {{ productVariant?.description }}<br.> Were are testing this shit up</br.>
+
+              {{ productVariant?.name }}
+
             </p>
             <div class="py-4 mb-4 border-gray-200 border-y">
               <div
