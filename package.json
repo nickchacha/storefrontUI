@@ -62,7 +62,7 @@
     "husky": "^9.0.11"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.18.1"
   },
   "config": {
     "commitizen": {
